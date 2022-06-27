@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Libre+Bodoni:ital,wght@1,500&family=Merriweather:ital,wght@1,700&family=Oswald:wght@200&family=Poppins:wght@100&family=Source+Sans+Pro:ital,wght@0,200;1,200&family=Square+Peg&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container form signup">
+      <div class="header form-content">
+        <h2>Sign Up Form</h2>
+      </div>
+      <form action="" class="sform" id="signForm">
+        <div class="formControl">
+          <input
+            type="text"
+            id="fName"
+            placeholder="First Name"
+            maxlength="15"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+        <div class="formControl">
+          <input
+            type="text"
+            id="lName"
+            placeholder="Last Name"
+            maxlength="15"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+        <div class="formControl">
+          <input type="email" id="email" placeholder="Email " maxlength="25" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+        <div class="formControl">
+          <input
+            type="password"
+            id="pass"
+            placeholder="Password"
+            maxlength="25"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+        <div class="formControl">
+          <input
+            type="number"
+            id="mobileNo"
+            placeholder="Mobile Number"
+            maxlength="10"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+        <div class="formControl">
+          <input type="date" id="dateId" placeholder="DOB" maxlength="25" />
+        </div>
+
+        <div class="formControl">
+          <select id="countryName" name="countries">
+            <option value="Country" selected>Country</option>
+          </select>
+        </div>
+
+        <div class="formControl">
+          <input type="text" id="state" placeholder="State" maxlength="15" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+
+        <div class="formControl">
+          <input type="text" id="city" placeholder="City" maxlength="15" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+
+        <div class="formControl">
+          <input
+            type="number"
+            id="pincode"
+            placeholder="Pincode"
+            maxlength="6"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small></small>
+        </div>
+
+        <div class="formControl">
+          <button id="btn">Sign Up</button>
+        </div>
+      </form>
+      <div class="form-link">
+        <span
+          >Already have an account?
+          <a href="#" class="link login-link btn--show-modal">Login</a></span
+        >
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Login</h2>
+      <form class="modal__form">
+        <input type="email" placeholder="email" id='email'/>
+        <input type="password" placeholder="Password" id='pass'/>
+        <button class="btn" id="btn">Login</button>
+      </form>
+      <div class="form-link">
+        <span>
+          <a href="#" class="link">Forgot Password?</a></span
+        >
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
